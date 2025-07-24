@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 
 # 🔐 Identifiants Google Sheet
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('continual-block-273814-f4120bc3878f.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
 client = gspread.authorize(creds)
 
 # 📄 Feuille Google Sheets
